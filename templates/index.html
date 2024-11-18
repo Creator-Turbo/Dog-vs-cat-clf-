@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog vs Cat Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Background Image -->
+    <div class="background">
+        <h1>Dog vs Cat Image Classifier</h1>
+
+        <!-- Form for Image Upload -->
+        <form action="{{ url_for('predict') }}" method="POST" enctype="multipart/form-data">
+            <label for="file">Upload Image:</label>
+            <input type="file" name="image" id="file" accept="image/*" required>
+            <button type="submit">Classify Image</button>
+        </form>
+
+        <!-- Display Prediction Result -->
+        {% if label %}
+            <h2>Prediction: {{ label }}</h2>
+            <img src="{{ url_for('static', filename=image_url.split('static/')[1]) }}" alt="Uploaded Image" style="width: 300px;">
+        {% endif %}
+
+        <footer>
+            <p>Made with love for cats and dogs!</p>
+        </footer>
+    </div>
+
+</body>
+</html>
+

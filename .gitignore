@@ -1,0 +1,51 @@
+# Python bytecode
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environments
+venv00/
+venv/
+*.env
+*.conda
+env/
+.venv/
+
+# Flask-specific files
+instance/
+*.db
+*.sqlite3
+.env  # Environment variables
+.env.*
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Config files
+*.yaml
+*.yml
+*.ini
+*.cfg
+
+# Data
+*.csv
+*.json
+*.xlsx
+
+# Model files
+*.h5
+*.pkl
+*.sav
+*.joblib
+
+# IDE files
+.vscode/
+.idea/
+*.iml
