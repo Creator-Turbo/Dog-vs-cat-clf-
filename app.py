@@ -13,7 +13,7 @@ ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Load the trained model
-with open('model/dog_vs_cat_model.pkl', 'rb') as file:
+with open('dog_vs_cat_model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 #
