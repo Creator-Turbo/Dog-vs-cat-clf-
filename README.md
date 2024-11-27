@@ -1,28 +1,181 @@
-Description
-In this competition, you'll write an algorithm to classify whether images contain either a dog or a cat.  This is easy for humans, dogs, and cats. Your computer will find it a bit more difficult.
+## End to End ML Project
+# Depression Professional Classification : 
 
-Woof Meow
+## Table of Content
+  * [Demo](#demo)
+  * [Overview](#overview)
+  * [Motivation](#motivation)
+  * [Technical Aspect](#technical-aspect)
+  * [Installation](#installation)
+  * [Run](#run)
+  * [Deployement on render](#deployement-on-render)
+  * [Directory Tree](#directory-tree)
+  * [To Do](#to-do)
+  * [Bug / Feature Request](#bug---feature-request)
+  * [Technologies Used](#technologies-used)
+  * [Team](#team)
+  * [License](#license)
+  * [Credits](#credits)
 
-Deep Blue beat Kasparov at chess in 1997.
-Watson beat the brightest trivia minds at Jeopardy in 2011.
-Can you tell Fido from Mittens in 2013?
 
-The Asirra data set
-Web services are often protected with a challenge that's supposed to be easy for people to solve, but difficult for computers. Such a challenge is often called a CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) or HIP (Human Interactive Proof). HIPs are used for many purposes, such as to reduce email and blog spam and prevent brute-force attacks on web site passwords.
+## Demo
+Link: [https://ipcc.rohitswami.com](https://ipcc.rohitswami.com)
 
-Asirra (Animal Species Image Recognition for Restricting Access) is a HIP that works by asking users to identify photographs of cats and dogs. This task is difficult for computers, but studies have shown that people can accomplish it quickly and accurately. Many even think it's fun! Here is an example of the Asirra interface:
+[![](https://imgur.com/s4FWb9b)](https://ipcc.rohitswami.com)
 
-Asirra is unique because of its partnership with Petfinder.com, the world's largest site devoted to finding homes for homeless pets. They've provided Microsoft Research with over three million images of cats and dogs, manually classified by people at thousands of animal shelters across the United States. Kaggle is fortunate to offer a subset of this data for fun and research. 
+## Overview
+This repository contains code for training multiple machine learning classifiers on a given dataset to predict mental health outcomes based on demographic, lifestyle, and work-related factors. The models are implemented using the scikit-learn library and include a wide range of supervised learning algorithms suitable for classification tasks.
 
-Image recognition attacks
-While random guessing is the easiest form of attack, various forms of image recognition can allow an attacker to make guesses that are better than random. There is enormous diversity in the photo database (a wide variety of backgrounds, angles, poses, lighting, etc.), making accurate automatic classification difficult. In an informal poll conducted many years ago, computer vision experts posited that a classifier with better than 60% accuracy would be difficult without a major advance in the state of the art. For reference, a 60% classifier improves the guessing probability of a 12-image HIP from 1/4096 to 1/459.
+The following classifiers are applied to the dataset:
 
-State of the art
-The current literature suggests machine classifiers can score above 80% accuracy on this task [1]. Therfore, Asirra is no longer considered safe from attack.  We have created this contest to benchmark the latest computer vision and deep learning approaches to this problem. Can you crack the CAPTCHA? Can you improve the state of the art? Can you create lasting peace between cats and dogs?
+-Logistic Regression
+-Random Forest Classifier
+-Gradient Boosting Classifier
+-AdaBoost Classifier
+-HistGradient Boosting Classifier
+-Support Vector Classifier (SVC)
+-Linear Support Vector Classifier (LinearSVC)
+-K-Nearest Neighbors Classifier (KNN)
+-Gaussian Naive Bayes
+-Multinomial Naive Bayes
+-Bernoulli Naive Bayes
+-Decision Tree Classifier
+-Linear Discriminant Analysis (LDA)
+-Quadratic Discriminant Analysis (QDA)
+-We have trained all of these algorithms and evaluated their performance, -selecting the best-performing models based on classification accuracy.
 
-Okay, we'll settle for the former. 
 
-Acknowledgements
-We extend our thanks to Microsoft Research for providing the data for this competition.
+## Motivation
+Mental health has become an increasingly critical issue globally, affecting individuals' overall well-being and productivity. Factors such as work pressure, lifestyle choices, and demographic variables are known to have a significant impact on mental health outcomes. With the growing importance of understanding these factors, this dataset was created to analyze the relationship between various lifestyle and work-related aspects and mental health conditions like depression and suicidal thoughts.
 
-Jeremy Elson, John R. Douceur, Jon Howell, Jared Saul, Asirra: A CAPTCHA that Exploits Interest-Aligned Manual Image Categorization, in Proceedings of 14th ACM Conference on Computer and Communications Security (CCS), Association for Computing Machinery, Inc., Oct. 2007
+By leveraging machine learning, this dataset aims to:
+
+Identify potential risk factors for mental health issues like depression, anxiety, and suicidal tendencies.
+Understand how work-life balance, financial stress, and job satisfaction impact mental well-being.
+Predict mental health outcomes based on demographic and lifestyle data to provide targeted interventions for high-risk individuals.
+The ultimate goal of this project is to improve mental health support strategies, inform workplace mental health policies, and provide insights into better supporting individuals who may be struggling with mental health issues.
+
+## Technical Aspect
+
+This project is divided into two major parts:
+
+Training Machine Learning Models:
+
+We train multiple machine learning algorithms on the mental health dataset.
+All models are implemented using scikit-learn, a Python library for machine learning.
+Evaluation is performed using performance metrics such as accuracy, precision, recall, and F1-score.
+<br>
+
+Building and Hosting a Flask Web App on Render:
+
+A Flask web application is built to interact with the trained models and make real-time predictions based on user input.
+The app is deployed using Render to provide easy access via the web.
+Users can submit their data via a simple web interface and receive mental health predictions
+    - 
+
+## Installation
+The Code is written in Python 3.10. If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. To install the required packages and libraries, run this command in the project directory after [cloning](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/) the repository:
+
+# the clone the repository
+
+```bash
+
+git clone gh repo clone Creator-Turbo/-depression-status
+
+```
+# Install dependencies: (all lib)
+```bash
+pip install -r requirements.txt
+```
+
+
+
+## Run
+To train the machine learning models:
+
+1. Prepare your dataset (make sure it’s in the correct format).
+>> Data : https://www.kaggle.com/datasets/ikynahidwin/depression-professional-dataset
+
+
+# To run the Flask web app locally
+```bash
+python app.py
+
+```
+# Deployment on Render
+
+## To deploy the Flask web app on Render:
+Push your code to GitHub.<br>
+Go to Render and create a new web service.<br>
+Connect your GitHub repository to Render.<br>
+Set up the environment variables if required (e.g., API keys, database credentials).<br>
+Deploy and your app will be live!
+
+
+
+## Directory Tree 
+```
+    Professional\
+    ├── data/                     # Dataset files
+    ├── notebook/                 # Jupyter notebooks
+    ├── static/                   # Static files (images, CSS, JS)
+    ├── templates/                # HTML files for Flask         
+    ├── .gitignore                # Git ignore file
+    ├── app.py                    # Main Flask application
+    ├── best_model.pkl            # Trained machine learning model
+    ├── README.md                 # Project documentation
+    ├── requirements.txt          # Dependencies for the project
+    └── tempCodeRunnerFile.py     # Temporary code file (IDE generated)
+```
+
+## To Do
+
+Implement cross-validation for model evaluation.
+Enhance hyperparameter tuning for better performance.
+Add user authentication for personalized predictions in the Flask app.
+Expand the dataset with additional mental health indicators.
+Improve web interface design for better user experience. 
+
+
+## Bug / Feature Request
+If you encounter any bugs or want to request a new feature, please open an issue on GitHub. We welcome contributions!
+
+
+
+
+## Technologies Used
+Python 3.10  
+scikit-learn  
+Flask (for web app development)  
+Render (for hosting and deployment)  
+pandas (for data manipulation)  
+numpy (for numerical operations)  
+matplotlib (for visualizations)  
+
+
+![](https://forthebadge.com/images/badges/made-with-python.svg)
+
+
+[<img target="_blank" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/260px-Scikit_learn_logo_small.svg.png" width=170>](https://pandas.pydata.org/docs/)
+[<img target="_blank" src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*RWkQ0Fziw792xa0S" width=170>](https://pandas.pydata.org/docs/)
+  [<img target="_blank" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDzf1RMK1iHKjAswDiqbFB8f3by6mLO89eir-Q4LJioPuq9yOrhvpw2d3Ms1u8NLlzsMQ&usqp=CAU" width=280>](https://matplotlib.org/stable/index.html) 
+ [<img target="_blank" src="https://icon2.cleanpng.com/20180829/okc/kisspng-flask-python-web-framework-representational-state-flask-stickker-1713946755581.webp" width=200>](https://flask.palletsprojects.com/en/stable/) 
+ [<img target="_blank" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/NumPy_logo_2020.svg/512px-NumPy_logo_2020.svg.png" width=200>](https://aws.amazon.com/s3/) 
+
+
+
+
+## Team
+This project was developed by:
+
+Bablu kumar pandey
+
+<!-- Collaborator Name -->
+
+
+
+
+## Credits
+
+Special thanks to the contributors of the scikit-learn library for their fantastic machine learning tools.
+
