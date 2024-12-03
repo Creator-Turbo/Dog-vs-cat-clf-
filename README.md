@@ -19,12 +19,12 @@
   * [Credits](#credits)
 
 
-<!-- ## Demo -->
-<!-- Link: [](https://ipcc.rohitswami.com) -->
+## Demo :
+Link: [Demo project](https://dog-vs-cat-clf.onrender.com)
 
-<!-- [![](https://imgur.com/s4FWb9b)](https://ipcc.rohitswami.com) -->
+<!-- <!-- [![](https://imgur.com/s4FWb9b)](https://ipcc.rohitswami.com) -->
 ## Cats vs. Dogs Image Classification
-![Dog vs Cat](images/dogvscat.jpg)
+![Dog vs Cat](dogvscat.jpg)
 
 ## Overview
 This project implements a deep learning model to classify images of dogs and cats. The model uses Convolutional Neural Networks (CNN) to distinguish between dog and cat images based on the features extracted from the images. This is a classic image classification problem typically used to showcase deep learning capabilities
