@@ -71,7 +71,7 @@ Users can submit their data via a simple web interface and receive mental health
 ## Installation
 The Code is written in Python 3.10. If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. To install the required packages and libraries, run this command in the project directory after [cloning](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/) the repository:
 
-# the clone the repository
+# To clone the repository
 
 ```bash
 
@@ -129,14 +129,14 @@ If you encounter any bugs or want to request a new feature, please open an issue
 
 
 ## Technologies Used
-Python 3.10  
-scikit-learn
-TensorFlow 
-Flask (for web app development)  
-Render (for hosting and deployment)  
-pandas (for data manipulation)  
-numpy (for numerical operations)  
-matplotlib (for visualizations) 
+Python 3.10<br> 
+scikit-learn<br>
+TensorFlow <br>
+Flask (for web app development)  <br>
+Render (for hosting and deployment)  <br>
+pandas (for data manipulation) <br>
+numpy (for numerical operations)  <br>
+matplotlib (for visualizations) <br>
 
 
 
