@@ -1,5 +1,6 @@
-## End to End ML Project
-# Depression Professional Classification : 
+## End to End Deep learning  Project
+
+# Cat vs Dog Image Classification
 
 ## Table of Content
   * [Demo](#demo)
@@ -18,30 +19,20 @@
   * [Credits](#credits)
 
 
-## Demo
-Link: [https://ipcc.rohitswami.com](https://ipcc.rohitswami.com)
+<!-- ## Demo -->
+<!-- Link: [](https://ipcc.rohitswami.com) -->
 
-[![](https://imgur.com/s4FWb9b)](https://ipcc.rohitswami.com)
+<!-- [![](https://imgur.com/s4FWb9b)](https://ipcc.rohitswami.com) -->
+## Cats vs. Dogs Image Classification
+![Dog vs Cat](dogvscat.jpg)
 
 ## Overview
-This repository contains code for training multiple machine learning classifiers on a given dataset to predict mental health outcomes based on demographic, lifestyle, and work-related factors. The models are implemented using the scikit-learn library and include a wide range of supervised learning algorithms suitable for classification tasks.
+This repository contains code for training multiple Deep learning  classifiers using cnn to predict mental health outcomes based on demographic, lifestyle, and work-related factors. The models are implemented using the scikit-learn library and include a wide range of supervised learning algorithms suitable for classification tasks.
 
-The following classifiers are applied to the dataset:
+The following classifiers are applied to the datase
 
--Logistic Regression
--Random Forest Classifier
--Gradient Boosting Classifier
--AdaBoost Classifier
--HistGradient Boosting Classifier
--Support Vector Classifier (SVC)
--Linear Support Vector Classifier (LinearSVC)
--K-Nearest Neighbors Classifier (KNN)
--Gaussian Naive Bayes
--Multinomial Naive Bayes
--Bernoulli Naive Bayes
--Decision Tree Classifier
--Linear Discriminant Analysis (LDA)
--Quadratic Discriminant Analysis (QDA)
+
+
 -We have trained all of these algorithms and evaluated their performance, -selecting the best-performing models based on classification accuracy.
 
 
