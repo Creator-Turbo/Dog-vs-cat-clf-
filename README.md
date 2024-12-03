@@ -20,7 +20,10 @@
 
 
 ## Demo :
+The image shoud be download(save images) on your device to used project<br>
 Link: [Demo project](https://dog-vs-cat-clf.onrender.com)
+
+
 
 <!-- <!-- [![](https://imgur.com/s4FWb9b)](https://ipcc.rohitswami.com) -->
 ## Cats vs. Dogs Image Classification
