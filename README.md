@@ -24,37 +24,41 @@
 
 <!-- [![](https://imgur.com/s4FWb9b)](https://ipcc.rohitswami.com) -->
 ## Cats vs. Dogs Image Classification
-![Dog vs Cat](dogvscat.jpg)
+![Dog vs Cat](images/dogvscat.jpg)
 
 ## Overview
-This repository contains code for training multiple Deep learning  classifiers using cnn to predict mental health outcomes based on demographic, lifestyle, and work-related factors. The models are implemented using the scikit-learn library and include a wide range of supervised learning algorithms suitable for classification tasks.
+This project implements a deep learning model to classify images of dogs and cats. The model uses Convolutional Neural Networks (CNN) to distinguish between dog and cat images based on the features extracted from the images. This is a classic image classification problem typically used to showcase deep learning capabilities
 
-The following classifiers are applied to the datase
-
-
-
--We have trained all of these algorithms and evaluated their performance, -selecting the best-performing models based on classification accuracy.
 
 
 ## Motivation
-Mental health has become an increasingly critical issue globally, affecting individuals' overall well-being and productivity. Factors such as work pressure, lifestyle choices, and demographic variables are known to have a significant impact on mental health outcomes. With the growing importance of understanding these factors, this dataset was created to analyze the relationship between various lifestyle and work-related aspects and mental health conditions like depression and suicidal thoughts.
+The ability to classify images into categories, such as identifying whether an image contains a dog or a cat, is a fundamental task in the field of computer vision. This project aims to explore the power of deep learning, specifically Convolutional Neural Networks (CNNs), to solve image classification problems.
 
-By leveraging machine learning, this dataset aims to:
 
-Identify potential risk factors for mental health issues like depression, anxiety, and suicidal tendencies.
-Understand how work-life balance, financial stress, and job satisfaction impact mental well-being.
-Predict mental health outcomes based on demographic and lifestyle data to provide targeted interventions for high-risk individuals.
-The ultimate goal of this project is to improve mental health support strategies, inform workplace mental health policies, and provide insights into better supporting individuals who may be struggling with mental health issues.
+#Key Motivations for this Project:
+Real-World Applications: Image classification is widely used in real-world applications like facial recognition, medical image analysis, and autonomous driving. The Dogs vs. Cats problem provides a simple but effective introduction to the challenges and methods used in the field of image classification.
+
+Understanding Deep Learning: Convolutional Neural Networks (CNNs) are a cornerstone of modern computer vision tasks. This project serves as a hands-on exercise to understand CNN architecture, how they process images, and how to tune them for optimal performance.
+
+Skill Development: By working through this project, the goal is to gain practical experience with various deep learning concepts including:
+
+Image preprocessing
+Data augmentation
+Training and fine-tuning deep learning models
+Model evaluation and performance analysis
+Exploration of Transfer Learning: In addition to building the model from scratch, this project also explores the possibility of improving performance through transfer learning, where a pre-trained model is fine-tuned for the task at hand. This is especially useful when limited labeled data is available.
+
+Benchmarking Deep Learning Performance: The Dogs vs. Cats dataset provides a simple benchmark for comparing different deep learning architectures and training techniques. It serves as an ideal starting point for individuals looking to understand how different models can be applied to image classification.
 
 ## Technical Aspect
 
 This project is divided into two major parts:
 
-Training Machine Learning Models:
+Training Deep Learning Models:
 
-We train multiple machine learning algorithms on the mental health dataset.
-All models are implemented using scikit-learn, a Python library for machine learning.
-Evaluation is performed using performance metrics such as accuracy, precision, recall, and F1-score.
+We train Deep learning algorithms(CNN) on the Dog vs cat dataset.
+All models are implemented using TensorFlow with Keras , a Python library for Deep leaning.
+
 <br>
 
 Building and Hosting a Flask Web App on Render:
@@ -71,7 +75,7 @@ The Code is written in Python 3.10. If you don't have Python installed you can f
 
 ```bash
 
-git clone gh repo clone Creator-Turbo/-depression-status
+gh repo clone Creator-Turbo/Dog-vs-cat-clf-
 
 ```
 # Install dependencies: (all lib)
@@ -82,13 +86,8 @@ pip install -r requirements.txt
 
 
 ## Run
-To train the machine learning models:
-
-1. Prepare your dataset (make sure it’s in the correct format).
->> Data : https://www.kaggle.com/datasets/ikynahidwin/depression-professional-dataset
-
-
-# To run the Flask web app locally
+To train the Deep leaning models:
+ To run the Flask web app locally
 ```bash
 python app.py
 
@@ -106,26 +105,21 @@ Deploy and your app will be live!
 
 ## Directory Tree 
 ```
-    Professional\
-    ├── data/                     # Dataset files
-    ├── notebook/                 # Jupyter notebooks
-    ├── static/                   # Static files (images, CSS, JS)
-    ├── templates/                # HTML files for Flask         
-    ├── .gitignore                # Git ignore file
-    ├── app.py                    # Main Flask application
-    ├── best_model.pkl            # Trained machine learning model
-    ├── README.md                 # Project documentation
-    ├── requirements.txt          # Dependencies for the project
-    └── tempCodeRunnerFile.py     # Temporary code file (IDE generated)
+.
+├── model
+├── static
+├── templates
+├── .gitignore
+├── app.py
+├── dog_vs_cat_model.pkl
+├── README.md
+├── requirements.txt
+└── tempCodeRunnerFile.py
 ```
 
 ## To Do
 
-Implement cross-validation for model evaluation.
-Enhance hyperparameter tuning for better performance.
-Add user authentication for personalized predictions in the Flask app.
-Expand the dataset with additional mental health indicators.
-Improve web interface design for better user experience. 
+
 
 
 ## Bug / Feature Request
@@ -136,12 +130,14 @@ If you encounter any bugs or want to request a new feature, please open an issue
 
 ## Technologies Used
 Python 3.10  
-scikit-learn  
+scikit-learn
+TensorFlow 
 Flask (for web app development)  
 Render (for hosting and deployment)  
 pandas (for data manipulation)  
 numpy (for numerical operations)  
-matplotlib (for visualizations)  
+matplotlib (for visualizations) 
+
 
 
 ![](https://forthebadge.com/images/badges/made-with-python.svg)
@@ -150,8 +146,12 @@ matplotlib (for visualizations)
 [<img target="_blank" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/260px-Scikit_learn_logo_small.svg.png" width=170>](https://pandas.pydata.org/docs/)
 [<img target="_blank" src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*RWkQ0Fziw792xa0S" width=170>](https://pandas.pydata.org/docs/)
   [<img target="_blank" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDzf1RMK1iHKjAswDiqbFB8f3by6mLO89eir-Q4LJioPuq9yOrhvpw2d3Ms1u8NLlzsMQ&usqp=CAU" width=280>](https://matplotlib.org/stable/index.html) 
- [<img target="_blank" src="https://icon2.cleanpng.com/20180829/okc/kisspng-flask-python-web-framework-representational-state-flask-stickker-1713946755581.webp" width=200>](https://flask.palletsprojects.com/en/stable/) 
+ [<img target="_blank" src="https://icon2.cleanpng.com/20180829/okc/kisspng-flask-python-web-framework-representational-state-flask-stickker-1713946755581.webp" width=170>](https://flask.palletsprojects.com/en/stable/) 
  [<img target="_blank" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/NumPy_logo_2020.svg/512px-NumPy_logo_2020.svg.png" width=200>](https://aws.amazon.com/s3/) 
+ [<img target="_blank" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/TensorFlow_logo.svg/512px-TensorFlow_logo.svg.png" width=200>](https://www.tensorflow.org/api_docs) 
+ [<img target="_blank" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Keras_logo.svg/512px-Keras_logo.svg.png" width=170>](https://keras.io/) 
+
+
 
 
 
