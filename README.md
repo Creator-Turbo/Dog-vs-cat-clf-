@@ -161,8 +161,11 @@ matplotlib (for visualizations) <br>
 
 ## Team
 This project was developed by:
+[![Rohit Swami](https://github.com/Creator-Turbo/images-/blob/main/Layer%204.png?raw=true)](ressume_link) |
+-|
+[Bablu kumar pandey](ressume) |)
 
-Bablu kumar pandey
+
 
 <!-- Collaborator Name -->
 
