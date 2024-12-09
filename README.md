@@ -173,5 +173,5 @@ This project was developed by:
 
 ## Credits
 
-Special thanks to the contributors of the scikit-learn library for their fantastic machine learning tools.
+Special thanks to the contributors of the TensorFlow library for their fantastic Deep leanring tools.
 
