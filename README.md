@@ -160,6 +160,8 @@ matplotlib (for visualizations) <br>
 
 ## Team
 This project was developed by:
+[![Bablu kumar pandey](https://github.com/Creator-Turbo/images-/blob/main/resized_image.png?raw=true)](ressume_link) |
+-|
 **Bablu Kumar Pandey**
 
 - [GitHub](https://github.com/Creator-Turbo)  
